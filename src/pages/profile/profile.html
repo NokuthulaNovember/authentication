@@ -1,0 +1,91 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="Thuli">
+        <ion-title align="center" style="color:burlywood;">Profile</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()"><ion-icon name="log-out"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="home" padding >
+    <div class="container" align="center">
+    <div>
+      <div class="profile-image">
+          <img [src]="base64Image">
+      </div>
+    </div>
+    <div>
+      <!-- <button ion-button round outline small color="light" (click)="galleryPhoto()">Choose from gellary</button> -->
+      <p align="center"><button  round ion-button class="p" color="light" (click)="galleryPhoto()">Choose from gallery</button></p>
+
+    </div>
+    <div>
+      <!-- <button ion-button round outline small color="light" (click)="cameraPhoto()">Take a photo</button> -->
+      <p align="center"><button  round ion-button class="p" color="light"(click)="cameraPhoto()">Take a photo</button></p>
+
+    </div>
+    <!-- <div> -->
+      <!-- <button ion-button round outline small color="light" (click)="upload()">Upload</button> -->
+      <!-- <p align="center"><button  round ion-button class="p" color="light"(click)="upload()">Upload</button></p> -->
+
+    <!-- </div> -->
+    <ion-list no-lines>
+        <ion-item class="t">
+            <ion-icon name="contact" item-start></ion-icon>
+        
+                   <label stacked >Name</label>
+                   <ion-input type="text" placeholder="enter your name" [(ngModel)]="firstName"></ion-input>
+                 </ion-item>
+          
+          <ion-item class="t">
+            <ion-icon name="contact" item-start></ion-icon>
+        
+                     <label stacked >Surname</label>
+                     <ion-input type="text" placeholder="enter your surname" [(ngModel)]="LastName"></ion-input>
+                   </ion-item>
+          
+                   <ion-item class="t">
+                      <ion-icon name="calendar" item-start></ion-icon>
+                       <ion-label> date of birth</ion-label>
+                         <ion-datetime displayFormat="MM D YYYY"
+                         pickerFormate="D MM YYYY" [(ngModel)]="birthDate"
+                         (ionChange)="updateDOB(birthDate)">
+          
+                         </ion-datetime>
+                         </ion-item>
+          <ion-item class="t">
+            <ion-icon name="at" item-start></ion-icon>
+        
+           <label stacked >Email</label>
+           <ion-input type="email" placeholder="enter your email address" [(ngModel)]="email"></ion-input>
+          </ion-item>
+        
+          <ion-item class="t">
+            <ion-icon name="call" item-start></ion-icon>
+          <ion-label stacked></ion-label>
+          <ion-input [(ngModel)]="contact" placeholder="enter your contact number"></ion-input>
+          </ion-item>
+        
+          <ion-item class="t">
+            <ion-icon name="lock" item-start></ion-icon>
+        
+             <label stacked >Password</label>
+             <ion-input type="password" placeholder="enter your password" [(ngModel)]="password"></ion-input>
+           </ion-item>
+          
+      <!-- <button ion-button round outline color="light" (click)="submit()" >Submit</button> -->
+      <p align="center"><button  round ion-button class="p" color="light"(click)="submit()">Submit</button></p>
+
+    </ion-list>
+  </div>
+</ion-content>
+
+

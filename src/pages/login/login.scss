@@ -1,12 +1,12 @@
-page-home {
+page-login {
 
     .home{
-        background-color: grey;
+        background-color: beige;
     }
-        .p{
-            background-color: transparent;
-            color:beige;
-            
+    .p{
+        background-color: grey;
+        color:beige;
+    }        
         }
         .t{
             color:beige;
@@ -22,11 +22,14 @@ page-home {
             top:50%; 
         border-radius: 100%;
          }
-    
-        ion-icon {
-            padding: 10px;
-            font-size: 20px;
-            color: beige;
-            border-radius:10px;
-          }
-}
+    .b{
+        color:burlywood;
+    }
+    ion-icon {
+        padding: 10px;
+        font-size: 20px;
+        color:burlywood;
+        border-radius:10px;
+      }
+         
+

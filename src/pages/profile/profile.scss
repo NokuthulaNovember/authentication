@@ -1,0 +1,47 @@
+page-profile {
+    .home{
+        background-color: beige;
+    }
+    .p{
+        background-color: grey;
+        color:beige;
+    }        
+        }
+        .t{
+            color:beige;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+        button{
+            align-content: center;
+            height:5000px; 
+            width:200px; 
+            margin: -20px -50px; 
+            position:center;
+            top:50%; 
+        border-radius: 100%;
+         }
+    .b{
+        background-color: transparent;
+    }
+    ion-icon {
+        padding: 10px;
+        font-size: 20px;
+        color:burlywood;
+        border-radius:10px;
+      }
+      .profile-image{
+
+        img{
+
+            height: 200px;
+            width: 200px;
+            border-radius:80%;
+            border: 4px solid burlywood ;
+            
+           
+        }
+      }
+
+ 
+
